@@ -359,7 +359,21 @@
     
       <div class="col-lg-7 mx-auto nopadding-x-md">
         <div class="container custom mx-auto">
-          <meting-js server="netease" type="song" id="3390198712" fixed="true" mini="true" autoplay="true"></meting-js>
+          <!-- 引入 APlayer 的样式和脚本 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<!-- 引入 MetingJS 的解析引擎 -->
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+<!-- 你的全局悬浮播放器组件 -->
+<meting-js 
+  server="netease" 
+  type="song" 
+  id="3390198712" 
+  fixed="true" 
+  mini="true" 
+  autoplay="true">
+</meting-js>
+
         </div>
       </div>
     
